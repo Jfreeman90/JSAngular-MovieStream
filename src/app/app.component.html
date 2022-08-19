@@ -3,9 +3,10 @@
   <mat-toolbar-row>
      <span><a style ="color:aliceblue" href="/"><fa-icon [icon]="faHome"></fa-icon></a></span>
      <span class="spacer"></span>
+     <a mat-button routerLink="/contactus">Contact us <fa-icon [icon]="faPhone"></fa-icon></a>
      <a mat-button routerLink="/register">Register <fa-icon [icon]="faPen"></fa-icon></a>
      <a mat-button routerLink="/login">Login <fa-icon [icon]="faTurnUp"></fa-icon></a>
   </mat-toolbar-row>
 </mat-toolbar>
-<!--Allow paths and routes to be connected-->
+<!--Allow paths and routes to be connected to the header here-->
 <router-outlet></router-outlet>

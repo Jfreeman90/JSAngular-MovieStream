@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { faVolumeHigh } from '@fortawesome/free-solid-svg-icons';
+import { faVolumeXmark } from '@fortawesome/free-solid-svg-icons';
+import { faGears } from '@fortawesome/free-solid-svg-icons';
+import { faExpand } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-filmvideo',
@@ -6,6 +10,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filmvideo.component.css']
 })
 export class FilmvideoComponent implements OnInit {
+  //icons from font awesome
+  faVolumeHigh=faVolumeHigh;
+  faVolumeXmark=faVolumeXmark;
+  faGears=faGears;
+  faExpand=faExpand;
 
   constructor() { }
 

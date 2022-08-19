@@ -1,1 +1,27 @@
-<p>filmvideo works!</p>
+<div class="film-container">
+    <!--container to hold the video which can resize when the page resizes-->
+    <div class="film-video">
+        <img class="film" src="./assets/FOTR-image.PNG" alt="film-video">
+    </div>
+    
+    <!--container to hold the video controls-->
+    <div class="video-controls-settings">
+        <div class="volume-control-container">
+            <div class="volume-icon">
+                <fa-icon [icon]="faVolumeHigh"></fa-icon>
+            </div>
+            <div class="mute-icon">
+                <fa-icon [icon]="faVolumeXmark"></fa-icon>
+            </div>
+        </div>
+        <div class="video-control-container">
+            <div class="settings-icon">
+                <fa-icon [icon]="faGears"></fa-icon>
+            </div>
+            <div class="fullscreen-icon">
+                <fa-icon [icon]="faExpand"></fa-icon>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,83 @@
+.film-container{
+    width: 100%;
+    height: 100%;
+
+}
+
+.film-video{
+    height: calc(100% - 50px);
+    display: flex;
+}
+
+.film{
+    margin:auto;
+    height: 400px;
+    width: calc(400px*1.66);
+    max-height: 750px;
+}
+
+.video-controls-settings{
+    font-size: 2rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.596);
+    color:grey;
+}
+
+.video-controls-settings:hover{
+    background-color: rgba(255, 255, 255, 0.76);
+    border-top: 2px solid rgb(83, 80, 80);
+}
+
+.volume-control-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.volume-icon{
+    padding-right: 15px;
+}
+
+.volume-icon:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+.mute-icon{
+    padding-left: 15px;
+}
+
+.mute-icon:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.video-control-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.settings-icon{
+    padding-right: 15px;
+}
+
+.settings-icon:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.fullscreen-icon{
+    padding-left: 15px;
+}
+
+.fullscreen-icon:hover{
+    color: black;
+    cursor: pointer;
+}

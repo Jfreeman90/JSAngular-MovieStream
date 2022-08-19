@@ -12,6 +12,10 @@ h2{
     color: blueviolet;
 }
 
+label{
+    font-size: 1.2rem;
+}
+
 .add-form{
     margin-bottom: 40px;
 }
@@ -26,7 +30,7 @@ h2{
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-family: inherit;
 }
 
@@ -88,7 +92,8 @@ h2{
     height: 20px;
 }
 
-.sign-in-button-container{
+.sign-up-button-container{
+    padding-top: 25px;
     display: flex;
     justify-content: flex-end;
 }

@@ -1,0 +1,76 @@
+.submit-container{
+    align-items: center;
+    width: 100%;
+}
+
+#chatmessage{
+    height:4rem;
+    background-color: #4a4a4c;
+    width:calc(100% - 20px);
+    color: aliceblue;
+    margin: 10px;
+}
+
+#chatmessage:hover{
+    border: 1px solid gray;
+}
+
+.chat-settings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-settings-icons{
+    display: flex;
+    flex: 1;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+
+.emoji-icon-container{
+    padding-right: 5px;
+}
+
+.emoji-icon-container:hover{
+    color: rgb(107, 16, 107);
+}
+
+.reaction-icon-container{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.reaction-icon-container:hover{
+    color: rgb(107, 16, 107);
+}
+
+.settings-icon-container{
+    padding-left: 5px;
+}
+
+.settings-icon-container:hover{
+    color: rgb(107, 16, 107);
+}
+
+.submit-message-container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.message-submit-button{
+    height:2rem;
+    width:75px;
+    background-color:blueviolet;
+    color: rgba(240, 248, 255, 0.822);
+    font-weight: bold;
+    border: 1px solid blueviolet;;
+    border-radius: 10%;
+}
+.message-submit-button:hover{
+    background-color: rgb(107, 16, 107);
+    border: 1px solid rgb(107, 16, 107);
+}

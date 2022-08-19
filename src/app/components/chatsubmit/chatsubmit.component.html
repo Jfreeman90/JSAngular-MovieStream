@@ -1,1 +1,15 @@
-<p>chatsubmit works!</p>
+<div class="submit-container">
+    <div class="input-container">
+        <input type="text" name="chatmessage" id="chatmessage" placeholder="Send a message!">
+    </div>
+</div>
+<div class="chat-settings">
+    <div class="chat-settings-icons">
+        <div class="emoji-icon-container"><fa-icon [icon]="faFaceSmile"></fa-icon></div>
+        <div class="reaction-icon-container"><fa-icon [icon]="faHandsClapping"></fa-icon></div>
+        <div class="settings-icon-container"><fa-icon [icon]="faGear"></fa-icon></div>
+    </div>
+    <div class="submit-message-container">
+        <button class="message-submit-button">Chat!</button>
+    </div>
+</div>

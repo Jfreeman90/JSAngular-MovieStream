@@ -36,7 +36,7 @@ h1{
 
 .image-title:hover{
     cursor: pointer;
-    box-shadow: 0px 0px 8px 1px rgb(255, 0, 191);
+    box-shadow: 0px 0px 8px 1px rgb(157, 40, 180);
 }
 
 .film-details-container{
@@ -59,7 +59,8 @@ h1{
 }
 
 .show-more{
-    color:blueviolet;
+    font-size: 1.1rem;
+    color:rgb(220, 203, 236);
 }
 
 .show-more:hover{

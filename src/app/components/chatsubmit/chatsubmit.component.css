@@ -5,10 +5,11 @@
 
 #chatmessage{
     height:4rem;
-    background-color: #4a4a4c;
+    background-color: #b6b6bb;
     width:calc(100% - 20px);
-    color: aliceblue;
+    color: rgb(16, 17, 17);
     margin: 10px;
+    font-size: 1.2rem;
 }
 
 #chatmessage:hover{
@@ -26,7 +27,7 @@
     flex: 1;
     padding-left: 10px;
     font-size: 1.5rem;
-    color: blueviolet;
+    color: aliceblue;
 }
 
 .emoji-icon-container{
@@ -34,7 +35,7 @@
 }
 
 .emoji-icon-container:hover{
-    color: rgb(107, 16, 107);
+    color: rgb(228, 151, 228);
 }
 
 .reaction-icon-container{
@@ -43,7 +44,7 @@
 }
 
 .reaction-icon-container:hover{
-    color: rgb(107, 16, 107);
+    color: rgb(228, 151, 228);
 }
 
 .settings-icon-container{
@@ -51,7 +52,7 @@
 }
 
 .settings-icon-container:hover{
-    color: rgb(107, 16, 107);
+    color: rgb(228, 151, 228);
 }
 
 .submit-message-container {

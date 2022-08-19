@@ -16,29 +16,30 @@
 .film-video-container{
     width:100%;
     height:calc(100% - 160px);
-    background-color: rgb(172, 172, 243);
+    background-color: rgb(8, 8, 8);
 }
 
 .film-information-container{
     width:100%;
     height: 160px;
-    background-color: cadetblue;
+    background-color: rgb(76, 78, 78);
 }
 
 .chat-container {
     float: right;
     width: 350px;
     height: 100%;
+    border-left: 2px solid gray;
 }
 
 .chat-messages-container{
     width:100%;
     height:calc(100% - 125px);
-    background-color: rgb(135, 204, 172);
+    background-color: rgb(76, 78, 78);
 }
 
 .chat-submit-container{
     width:100%;
     height: 125px;
-    background-color: rgb(187, 230, 179);
+    background-color: rgb(76, 78, 78);
 }

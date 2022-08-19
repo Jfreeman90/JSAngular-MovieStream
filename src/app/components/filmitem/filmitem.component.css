@@ -1,0 +1,53 @@
+.filmitem-details-container{
+    float: left;
+    padding-left: 10px;
+    padding-top:10px;
+    width:500px;
+    min-width: 450px;
+}
+
+.filmitem-image-container{
+    display: flex;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.image-title{
+    width: 90px;
+    height: 130px;
+}
+
+.image-title:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 1px rgb(157, 40, 180);
+}
+
+.filmitem-details-container{
+    display: flex;
+    flex: 1;
+    padding-left: 5px;
+}
+
+
+.film-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.release-date{
+    font-size: 1.1rem;
+}
+
+.film-rating{
+    font-size: 1.1rem;
+}
+
+.show-more{
+    font-size: 1.1rem;
+    color:rgb(220, 203, 236);
+}
+
+.show-more:hover{
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -73,6 +73,16 @@
     cursor: pointer;
 }
 
+.captions-icon{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.captions-icon:hover{
+    color: black;
+    cursor: pointer;
+}
+
 .fullscreen-icon{
     padding-left: 15px;
 }

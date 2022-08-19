@@ -16,7 +16,7 @@
 .film-video-container{
     width:100%;
     height:calc(100% - 160px);
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(5, 5, 5);
 }
 
 .film-information-container{

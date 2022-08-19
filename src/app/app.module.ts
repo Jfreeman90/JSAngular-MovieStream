@@ -15,6 +15,12 @@ import { FilmvideoComponent } from './components/filmvideo/filmvideo.component';
 import { FilmdetailsComponent } from './components/filmdetails/filmdetails.component';
 import { ChatmessagesComponent } from './components/chatmessages/chatmessages.component';
 import { ChatsubmitComponent } from './components/chatsubmit/chatsubmit.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { Top10Component } from './components/top10/top10.component';
+import { RecommendedComponent } from './components/recommended/recommended.component';
+import { SearchComponent } from './components/search/search.component';
+import { ScheduleComponent } from './components/schedule/schedule.component';
+import { FilmitemComponent } from './components/filmitem/filmitem.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,13 @@ import { ChatsubmitComponent } from './components/chatsubmit/chatsubmit.componen
     FilmvideoComponent,
     FilmdetailsComponent,
     ChatmessagesComponent,
-    ChatsubmitComponent
+    ChatsubmitComponent,
+    HomepageComponent,
+    Top10Component,
+    RecommendedComponent,
+    SearchComponent,
+    ScheduleComponent,
+    FilmitemComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +51,8 @@ import { ChatsubmitComponent } from './components/chatsubmit/chatsubmit.componen
       {path: 'contactus', component: ContactComponent},
       {path: 'register', component: RegistrationComponent},
       {path: 'login', component: LoginComponent},
-      {path: 'film', component: FilmpageComponent}
+      {path: 'film', component: FilmpageComponent},
+      {path: 'home', component: HomepageComponent}
     ])
   ],
   providers: [],

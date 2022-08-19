@@ -15,13 +15,13 @@
 
 .film-video-container{
     width:100%;
-    height: 85%;
+    height:calc(100% - 120px);
     background-color: rgb(172, 172, 243);
 }
 
 .film-information-container{
     width:100%;
-    height: 15%;
+    height: 120px;
     background-color: cadetblue;
 }
 
@@ -33,12 +33,12 @@
 
 .chat-messages-container{
     width:100%;
-    height: 85%;
+    height:calc(100% - 150px);
     background-color: rgb(135, 204, 172);
 }
 
 .chat-submit-container{
     width:100%;
-    height: 15%;
+    height: 150px;
     background-color: rgb(187, 230, 179);
 }

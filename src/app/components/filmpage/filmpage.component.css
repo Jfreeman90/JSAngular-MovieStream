@@ -15,13 +15,13 @@
 
 .film-video-container{
     width:100%;
-    height:calc(100% - 120px);
+    height:calc(100% - 160px);
     background-color: rgb(172, 172, 243);
 }
 
 .film-information-container{
     width:100%;
-    height: 120px;
+    height: 160px;
     background-color: cadetblue;
 }
 

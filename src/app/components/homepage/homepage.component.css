@@ -10,7 +10,7 @@
 .films-container {
     float: left;
     height: 100%; 
-    width: 500px; 
+    width: 450px; 
     border-right: 2px solid rgb(46, 45, 45); 
 }
 
@@ -29,18 +29,19 @@
 
 .search-schedule-container{
     float: right;
-    width:calc(100% - 500px);
+    width:calc(100% - 450px);
     height: 100%;
 }
 
 .search-container{
     width:100%;
-    height:400px;
-    background-color: rgb(230, 227, 101);
+    height:340px;
+    background-color: rgb(76, 78, 78);
+    min-height: 340px;
 }
 
 .schedule-container{
     width:100%;
-    height: calc(100% - 400px);
+    height: calc(100% - 340px);
     background-color: rgb(34, 156, 156);
 }

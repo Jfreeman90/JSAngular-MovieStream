@@ -1,0 +1,22 @@
+.search-item-container{
+    text-align: center;
+    width: 150px;
+}
+
+.image-title{
+    width: 90px;
+    height: 130px;
+}
+
+.image-title:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 1px rgb(157, 40, 180);
+}
+
+.title-container{
+    font-size: 1.2rem;
+}
+
+.rating-container{
+    font-size: 1.2rem;
+}

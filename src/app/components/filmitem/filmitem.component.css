@@ -10,6 +10,7 @@
     display: flex;
     flex: 1;
     padding-right: 10px;
+    padding-left: 10px;
 }
 
 .image-title{
@@ -32,18 +33,19 @@
 .film-title{
     font-size: 1.2rem;
     font-weight: bold;
+    width:300px;
 }
 
 .release-date{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .film-rating{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .show-more{
-    font-size: 1.1rem;
+    font-size: 1rem;
     color:rgb(220, 203, 236);
 }
 

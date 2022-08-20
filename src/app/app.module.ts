@@ -21,6 +21,8 @@ import { RecommendedComponent } from './components/recommended/recommended.compo
 import { SearchComponent } from './components/search/search.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
 import { FilmitemComponent } from './components/filmitem/filmitem.component';
+import { SearchitemComponent } from './components/searchitem/searchitem.component';
+import { ScheduleitemComponent } from './components/scheduleitem/scheduleitem.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { FilmitemComponent } from './components/filmitem/filmitem.component';
     SearchComponent,
     ScheduleComponent,
     FilmitemComponent,
+    SearchitemComponent,
+    ScheduleitemComponent,
   ],
   imports: [
     BrowserModule,

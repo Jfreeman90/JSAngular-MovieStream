@@ -3,13 +3,20 @@
     text-align: center;
     height:100px;
     padding-top: 15px;
-    border-bottom: 1px solid #b6b6bb;
+}
+
+.input-container{
+    font-size:1.5rem
+}
+.films-found-text-container{
+    font-size:1.2rem;
+    text-decoration: underline;
 }
 
 #search-input{
     height:2rem;
     background-color: #b6b6bb;
-    width:200px;
+    width:300px;
     color: rgb(16, 17, 17);
     font-size: 1.2rem;
 }
@@ -36,12 +43,12 @@
     border: 1px solid rgb(107, 16, 107);
 }
 
-.float-container {
+.films-found-container{
     height: calc(100% - 100px);
     align-items: center;
 }
 
-.float-child {
+.search-item-container{
     float: left;
     margin: 1%;
     border-right: solid 1px gray;

@@ -1,21 +1,24 @@
 <div class="container">
-    <form>
+    <form (ngSubmit)="onSubmit()">
         <div class="login-header">
             <h2>Login to Movie Stream!</h2>
         </div>
         <div class="form-control">
             <label for="username">Username:</label>
-            <input type="text" name="username" id="username" placeholder="Enter Username here">
+            <input type="text" name="username" [(ngModel)]="username" id="username" placeholder="Enter Username here">
         </div>
         <div class="form-control">
             <label for="password">Password:</label>
-            <input type="password" name="password" id="password" placeholder="Enter Password here">
+            <input type="password" name="password" [(ngModel)]="password" id="password" placeholder="Enter Password here">
         </div>
         <div class="login-button-container">
             <input type="submit" value="Login" class="btn login-button">
         </div>
     </form>
+    <div class="new-user-container">
+        <p><a href="/register">New user? Register here!</a></p>
+    </div>
     <div class="forgot-password-container">
-        <p>Forgot your password?</p>
+        <p> <a href="/login/reset">Forgot your password?</a></p>
     </div>
 </div>

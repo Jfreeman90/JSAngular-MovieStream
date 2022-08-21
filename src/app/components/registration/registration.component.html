@@ -1,27 +1,27 @@
 <div class="container">
-<form>
+<form (ngSubmit)="onSubmit()">
     <div class="sign-up-header">
         <h2>Sign up for Movie Stream!</h2>
     </div>
     <div class="form-control">
         <label for="email">Email:</label>
-        <input type="text" name="email" id="email" placeholder="Enter email here">
+        <input type="text" name="email" [(ngModel)]="email" id="email" placeholder="Enter email here">
     </div>
     <div class="form-control">
         <label for="username">Username:</label>
-        <input type="text" name="username" id="username" placeholder="Enter username here">
+        <input type="text" name="username" [(ngModel)]="username" id="username" placeholder="Enter username here">
     </div>
     <div class="form-control">
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" placeholder="Enter Password here">
+        <input type="password" name="password" [(ngModel)]="password" id="password" placeholder="Enter Password here">
     </div>
     <div class="form-control">
         <label for="password_check">Confirm password:</label>
-        <input type="password" name="password_check" id="password_check" placeholder="Confirm Password">
+        <input type="password" name="password_check" [(ngModel)]="password_check" id="password_check" placeholder="Confirm Password">
     </div>
     <div class="form-control-check">
         <label for ="mailing_list">Subscribe to email mailing list:</label>
-        <input type="checkbox" name="mailing_list" id="mailing_list">
+        <input type="checkbox" name="mailing_list" [(ngModel)]="mailing_list" id="mailing_list">
     </div>
     <div class="sign-up-button-container">
         <input type="submit" value="Register" class="btn register-button"> 

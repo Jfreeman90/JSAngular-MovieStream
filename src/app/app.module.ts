@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './components/registration/registration.component';
@@ -23,6 +24,7 @@ import { ScheduleComponent } from './components/schedule/schedule.component';
 import { FilmitemComponent } from './components/filmitem/filmitem.component';
 import { SearchitemComponent } from './components/searchitem/searchitem.component';
 import { ScheduleitemComponent } from './components/scheduleitem/scheduleitem.component';
+import { ForgotpasswordpageComponent } from './components/forgotpasswordpage/forgotpasswordpage.component';
 
 @NgModule({
   declarations: [
@@ -43,11 +45,13 @@ import { ScheduleitemComponent } from './components/scheduleitem/scheduleitem.co
     FilmitemComponent,
     SearchitemComponent,
     ScheduleitemComponent,
+    ForgotpasswordpageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MyMaterialModule, 
     FontAwesomeModule,
     RouterModule.forRoot([
@@ -55,6 +59,7 @@ import { ScheduleitemComponent } from './components/scheduleitem/scheduleitem.co
       {path: 'contactus', component: ContactComponent},
       {path: 'register', component: RegistrationComponent},
       {path: 'login', component: LoginComponent},
+      {path: 'login/reset', component: ForgotpasswordpageComponent},
       {path: 'film', component: FilmpageComponent},
       {path: 'home', component: HomepageComponent}
     ])

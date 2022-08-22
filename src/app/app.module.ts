@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';    //needed for fetching data
+import { FormsModule } from '@angular/forms';               //needed for forms
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './components/registration/registration.component';
@@ -49,10 +50,11 @@ import { ForgotpasswordpageComponent } from './components/forgotpasswordpage/for
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    MyMaterialModule, 
+    MyMaterialModule,
     FontAwesomeModule,
     RouterModule.forRoot([
       {path: '', redirectTo: '/', pathMatch: 'full'},

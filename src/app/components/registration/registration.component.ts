@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/User';                  //user interface to get the user json format
+import { UserService } from 'src/app/user.service';   //user service to get in touch with the API
 
 @Component({
   selector: 'app-registration',
@@ -12,8 +14,10 @@ export class RegistrationComponent implements OnInit {
   password: string;
   password_check: string;
   mailing_list: boolean=true;
+  //variable for a User
+  user: User;
 
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
   }
@@ -39,7 +43,9 @@ export class RegistrationComponent implements OnInit {
 
     //add logic to check password meets the rules
 
-    //check the password and password_check are the same 
+
+
+    //check the password and password_check are the same
     if (this.password!==this.password_check){
       alert('You passwords are not the same. Confirm your password again.');
       //clear password inputs to allow user to renter them easily
@@ -53,8 +59,12 @@ export class RegistrationComponent implements OnInit {
       email: this.email,
       username: this.username,
       password: this.password,
-      mailing_list: this.mailing_list
     }
+
+    //send the new user to the database and save it
+    this.userService.addUser(this.email, this.username, this.password).subscribe(() => (
+      console.log("ADDED user to database")
+    ));
 
      //clear the form after submission
      this.email='';
@@ -62,8 +72,5 @@ export class RegistrationComponent implements OnInit {
      this.password='';
      this.password_check='';
      this.mailing_list=true;
-
-    //print out/send the user to the database
-    console.log(newUser)
   }
 }

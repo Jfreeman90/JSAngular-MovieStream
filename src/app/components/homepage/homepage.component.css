@@ -17,14 +17,14 @@
 .top10-container{
     width:100%;
     height:calc(100% - 200px);
-    background-color: rgb(76, 78, 78);
+    background-color: rgb(216, 206, 206);
     border-bottom: 1px solid #b6b6bb;
 }
 
 .reccomended-container{
     width:100%;
     height: 200px;
-    background-color: rgb(76, 78, 78);
+    background-color: rgb(216, 206, 206);
 }
 
 .search-schedule-container{
@@ -36,12 +36,12 @@
 .search-container{
     width:100%;
     height:360px;
-    background-color: rgb(76, 78, 78);
+    background-color: rgb(216, 206, 206);
     min-height: 340px;
 }
 
 .schedule-container{
     width:100%;
     height: calc(100% - 360px);
-    background-color: rgb(76, 78, 78);
+    background-color: rgb(216, 206, 206);
 }

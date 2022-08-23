@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/User';                  //user interface to get the user json format
 import { UserService } from 'src/app/user.service';   //user service to get in touch with the API
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,7 @@ export class LoginComponent implements OnInit {
   //variable for the user element which links to the user interface which holds all information that is returned
   user: User;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -38,14 +39,13 @@ export class LoginComponent implements OnInit {
 
       //check that the password entered matches the password in the database.
       if (this.password===this.user.password){
-        console.log("Log in succesful")
+        //update the HTML of the forgoten password page
+        let confirmation=document.getElementById("login-conformation-message");
+        confirmation.innerHTML=`Log in successful!`;
+        //redirect to home page if log in correct
+        this.router.navigate(['/home']);
       }
     } );
-
-
-    //clear the form after submission
-    this.username='';
-    this.password='';
   }
 
 }

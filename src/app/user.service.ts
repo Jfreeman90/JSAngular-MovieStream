@@ -6,15 +6,12 @@ import { User } from './User';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json'
-    }
-  )
+    })
 }
 
 @Injectable({
   providedIn: 'root'
 })
-
-//User functions to talk to the API for users
 export class UserService {
   //from the sakila api look up the email from the users SQL table entered into the input file
   private apiURLEmailLookup:string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/users/email?email=';
@@ -23,8 +20,6 @@ export class UserService {
 
   //constructor allows the use of get/post/patch/del
   constructor(private http:HttpClient) { }
-
-
   //get user from username
   getUserFromUsername(username: string): Observable<User>{
     //return the task array from the api

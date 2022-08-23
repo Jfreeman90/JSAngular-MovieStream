@@ -4,6 +4,6 @@
             <h1>Top Rated Films!</h1>
         </div>
     </div>
-    <!--each filmitem component for the top films-->
-    <app-filmitem></app-filmitem>
+    <!--each filmitem component for the top 5 films-->
+    <app-filmitem *ngFor="let film of films" [film]="film"></app-filmitem>
 </div>

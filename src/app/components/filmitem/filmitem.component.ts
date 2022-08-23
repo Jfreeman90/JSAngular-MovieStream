@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { Film } from 'src/app/Film';
+
 
 @Component({
   selector: 'app-filmitem',
@@ -9,6 +11,8 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 export class FilmitemComponent implements OnInit {
   //star icon
   faStar=faStar;
+  @Input() film: Film;
+
   constructor() { }
 
   ngOnInit(): void {

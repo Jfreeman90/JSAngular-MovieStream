@@ -4,23 +4,23 @@
         <!--Image of the film-->
         <div class="filmitem-image">
             <a href="/film">
-                <img class="image-title" src="./assets/LOTR-image.PNG" alt="film image">
+                <img class="image-title" src="./assets/placeholder_image.PNG" alt="film image">
             </a>
         </div>
         <!--Contain title, rating and release date and link to more info-->
         <div class="filmitem-details-container">
             <div class="filmitem-details">
                 <div class="film-title">
-                    Lord of the rings: Fellowship Of the rings
+                    {{ film.title }}
                 </div>
                 <div class="release-date">
-                    Release date: 2001
+                    {{ film.releaseYear }}
                 </div>
                 <div class="film-rating">
-                    8.8 <fa-icon [icon]="faStar"> (12,458)</fa-icon> (12,458)
+                    {{ film.score }} <fa-icon [icon]="faStar"></fa-icon> ({{ film.scoreCount }})
                 </div>
                 <div class="show-more">
-                    More details...
+                    More details... filmid({{ film.filmId }})
                 </div>
             </div>
         </div>

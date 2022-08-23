@@ -60,7 +60,13 @@ h1{
 
 .show-more{
     font-size: 1.1rem;
-    color:rgb(220, 203, 236);
+    color:rgb(177, 70, 204);
+    text-decoration: none;
+}
+
+.show-more>a{
+  color:rgb(177, 70, 204);
+  text-decoration: none;
 }
 
 .show-more:hover{

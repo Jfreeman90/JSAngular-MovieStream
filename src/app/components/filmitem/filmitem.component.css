@@ -36,6 +36,16 @@
     width:300px;
 }
 
+.film-title-link{
+  color: black;
+}
+
+.film-title-link:hover{
+  font-weight: bold;
+  cursor: pointer;
+  font-size: larger;
+}
+
 .release-date{
     font-size: 1rem;
 }

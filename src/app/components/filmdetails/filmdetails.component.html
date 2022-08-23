@@ -3,22 +3,22 @@
     <div class="film-details-left-container">
         <div class="film-image-container">
             <div class="film-image">
-                <img class="image-title" src="./assets/LOTR-image.PNG" alt="film image">
+                <img class="image-title" src="./assets/placeholder_image.PNG" alt="film image">
             </div>
 
             <div class="film-details-container">
                 <div class="film-details">
                     <div class="film-title">
-                        <p>Lord of the rings: Fellowship of the rings</p>
+                        <p>{{ film.title }}</p>
                     </div>
                     <div class="release-date">
-                        <p>Release date: 2001</p>
+                        <p>Release date: {{ film.releaseYear }}</p>
                     </div>
                     <div class="film-length">
-                        <p>Length: 158 minutes</p>
+                        <p>Length: {{ film.length }}</p>
                     </div>
                     <div class="show-more">
-                        <p>More details...</p>
+                        <p><a [href]="'/more/'+film.filmId" target="_blank">More details...</a></p>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="current-rating">
-                <p>Current rating : 8.8 <fa-icon [icon]="faStar"></fa-icon> (12,458)</p>
+                <p>Current rating : {{ film.score }} <fa-icon [icon]="faStar"></fa-icon> ({{ film.scoreCount }})</p>
             </div>
         </div>
     </div>

@@ -7,8 +7,8 @@
             <app-filmvideo></app-filmvideo>
         </div>
         <div class="film-information-container">
-            <!--filmdetails component goes into this container div-->
-            <app-filmdetails></app-filmdetails>
+            <!--filmdetails component goes into this container div depends on the id of the film loaded-->
+            <app-filmdetails [film]="film"></app-filmdetails>
         </div>
     </div>
     <!--Hold the chat and chat submit divs-->

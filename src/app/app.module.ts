@@ -63,7 +63,7 @@ import { MoredetailspageComponent } from './components/moredetailspage/moredetai
       {path: 'register', component: RegistrationComponent},
       {path: 'login', component: LoginComponent},
       {path: 'login/reset', component: ForgotpasswordpageComponent},
-      {path: 'film', component: FilmpageComponent},
+      {path: 'film/:id', component: FilmpageComponent},
       {path: 'home', component: HomepageComponent},
       {path: 'more/:id',  component: MoredetailspageComponent}
     ])

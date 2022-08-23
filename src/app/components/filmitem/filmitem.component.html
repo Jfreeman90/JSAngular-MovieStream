@@ -4,7 +4,7 @@
         <!--Image of the film-->
         <div class="filmitem-image">
             <a [href]="'/film/'+film.filmId">
-                <img class="image-title" src="./assets/placeholder_image.PNG" alt="film image">
+                <img class="image-title" [src]="'https://picsum.photos/id/'+film.filmId+'/200'" alt="film image">
             </a>
         </div>
         <!--Contain title, rating and release date and link to more info-->

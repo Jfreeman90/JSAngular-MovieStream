@@ -26,6 +26,7 @@ import { FilmitemComponent } from './components/filmitem/filmitem.component';
 import { SearchitemComponent } from './components/searchitem/searchitem.component';
 import { ScheduleitemComponent } from './components/scheduleitem/scheduleitem.component';
 import { ForgotpasswordpageComponent } from './components/forgotpasswordpage/forgotpasswordpage.component';
+import { MoredetailspageComponent } from './components/moredetailspage/moredetailspage.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { ForgotpasswordpageComponent } from './components/forgotpasswordpage/for
       {path: 'login', component: LoginComponent},
       {path: 'login/reset', component: ForgotpasswordpageComponent},
       {path: 'film', component: FilmpageComponent},
-      {path: 'home', component: HomepageComponent}
+      {path: 'home', component: HomepageComponent},
+      {path: 'more/:id',  component: MoredetailspageComponent}
     ])
   ],
   providers: [],

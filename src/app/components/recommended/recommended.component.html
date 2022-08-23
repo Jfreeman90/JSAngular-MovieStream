@@ -5,5 +5,5 @@
         </div>
     </div>
     <!--each filmitem component for the top films-->
-    <app-filmitem></app-filmitem>
+    <app-filmitem *ngFor="let film of films" [film]="film"></app-filmitem>
 </div>

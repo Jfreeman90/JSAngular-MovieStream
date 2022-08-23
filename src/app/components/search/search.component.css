@@ -16,7 +16,7 @@
 #search-input{
     height:2rem;
     background-color: #b6b6bb;
-    width:300px;
+    width:400px;
     color: rgb(16, 17, 17);
     font-size: 1.2rem;
 }
@@ -48,8 +48,3 @@
     align-items: center;
 }
 
-.search-item-container{
-    float: left;
-    margin: 1%;
-    border-right: solid 1px gray;
-}  

@@ -1,14 +1,17 @@
 <!-- when a film is searched for and returned this is the format of the returned film-->
 <div class="search-item-container">
     <div class="image-container">
-        <a href="/film">
-            <img class="image-title" src="./assets/LOTR-image.PNG" alt="film image">
+        <a [href]="'/film/'+film.filmId">
+            <img class="image-title" [src]="'https://picsum.photos/id/'+film.filmId+'/200'" alt="film image">
         </a>
     </div>
     <div class="title-container">
-        Lord of the rings fellowship of the rings
+        {{ film.title }}
     </div>
+    <div class="category-container">
+      {{ film.filmCategory[0].name }}
+  </div>
     <div class="rating-container">
-        8.8 <fa-icon [icon]="faStar"></fa-icon>
+        {{ film.score}} <fa-icon [icon]="faStar"></fa-icon>
     </div>
 </div>

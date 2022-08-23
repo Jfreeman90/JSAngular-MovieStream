@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { Film } from 'src/app/Film';
 @Component({
   selector: 'app-searchitem',
   templateUrl: './searchitem.component.html',
@@ -8,6 +9,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 export class SearchitemComponent implements OnInit {
   //variable for the star icon
   faStar=faStar;
+  @Input() film: Film;
 
   constructor() { }
 

@@ -12,10 +12,13 @@
                         <p>{{ film.title }}</p>
                     </div>
                     <div class="release-date">
-                        <p>Release date: {{ film.releaseYear }}</p>
+                        Release date: {{ film.releaseYear }}
                     </div>
+                    <div class="category">
+                      Category: {{ film.filmCategory[0].name }}
+                  </div>
                     <div class="film-length">
-                        <p>Length: {{ film.length }}</p>
+                        Length: {{ film.length }} minutes
                     </div>
                     <div class="show-more">
                         <p><a [href]="'/more/'+film.filmId" target="_blank">More details...</a></p>

@@ -20,3 +20,9 @@
 .rating-container{
     font-size: 1.2rem;
 }
+
+.search-item-container{
+  float: left;
+  margin: 1%;
+  border-right: solid 1px gray;
+}

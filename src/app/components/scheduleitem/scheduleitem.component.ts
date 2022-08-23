@@ -19,4 +19,12 @@ export class ScheduleitemComponent implements OnInit {
     this.filmService.getRandomFilm().subscribe((film) => this.film=film);
   }
 
+  //when a ticket is reserved for that film id add one to the tickets reserve and update the html.
+  onReserveTicket(){
+    this.filmService.reserveTicket(this.film.filmId).subscribe((response)=>{
+      //update the html DOM element with the new tickets reserved
+      document.getElementById("tickets-container").innerHTML=`<b>Tickets reserved:</b> ${response.ticketsReserved}`
+    });
+
+  }
 }

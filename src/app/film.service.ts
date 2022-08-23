@@ -18,6 +18,7 @@ export class FilmService {
   private apiURLTopRated: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/top_rated';
   private apiReommended: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/recommended';
   private apiRandom: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/random';
+  private apiReserveTicket: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/get_ticket?id=';
 
   constructor(private http:HttpClient) { }
 
@@ -43,5 +44,10 @@ export class FilmService {
   getRecommendedFilms(): Observable<Film[]>{
     //return the task array from the api
     return this.http.get<Film[]>(this.apiReommended);
+  }
+
+  //add one to the tickets reserved for a particular film based on the ID
+  reserveTicket(id:number){
+    return this.http.patch<Film>(this.apiReserveTicket+id, id);
   }
 }

@@ -20,7 +20,7 @@
 
 .countdown-container{
     padding: 5px;
-    text-align:left; 
+    text-align:left;
 }
 
 .people-going-container{
@@ -49,4 +49,5 @@
 .reserve-ticket-button:hover{
     background-color: rgb(107, 16, 107);
     border: 1px solid rgb(107, 16, 107);
+    cursor: pointer;
 }

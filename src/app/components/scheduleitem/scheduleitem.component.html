@@ -13,11 +13,11 @@
             <b>Countdown:</b> 3.45
         </div>
         <div class="extra-information">
-            <div class="people-going-container">
-                <b>Tickets reserved:</b> 1,582
+            <div class="people-going-container" id="tickets-container">
+                <b>Tickets reserved:</b> {{ film.ticketsReserved }}
             </div>
             <div class="reserve-ticket-button-container">
-                <button class="reserve-ticket-button">Reserve Ticket!</button>
+                <button (click)="onReserveTicket()" class="reserve-ticket-button">Reserve Ticket!</button>
             </div>
         </div>
     </div>

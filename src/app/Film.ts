@@ -28,5 +28,6 @@ export interface Film{
   score: number,
   scoreCount: number,
   scoreTotal: number,
-  filmCategory?:[Category]
+  filmCategory?:[Category],
+  ticketsReserved: number
 }

@@ -1,3 +1,41 @@
-<p>
-  moredetailspage works!
-</p>
+<div class="container">
+  <div class="film-title">
+      <h2>{{ film.title }}</h2>
+  </div>
+  <div class="film-detail-container">
+    <div class="image-container">
+      <img class="image-details" src="./assets/placeholder_image.PNG" alt="film image">
+    </div>
+    <div class="details-container">
+      <div class="description">
+        <p><strong>Description:</strong> {{ film.description }}</p>
+      </div>
+      <div class="release-year">
+        <p><strong>Release Year:</strong> {{ film.releaseYear }}</p>
+      </div>
+      <div class="length">
+        <p><strong>Length:</strong> {{ film.length }}</p>
+      </div>
+      <div class="rating">
+        <p><strong>Rating:</strong> {{ film.rating }}</p>
+      </div>
+      <div class="special-features">
+        <p><strong>Special features:</strong> {{ film.specialFeatures }}</p>
+      </div>
+      <div class="language">
+        <p><strong>Language:</strong> {{ film.language.name }}</p>
+      </div>
+      <div class="category">
+        <p><strong>Category:</strong> {{ film.filmCategory[0].name }}</p>
+      </div>
+      <div class="score">
+        <p><strong>Score:</strong> {{ film.score }}</p>
+      </div>
+      <div class="number-of-votes">
+        <p><strong>Number of votes:</strong> {{ film.scoreCount }}</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>

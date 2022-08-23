@@ -20,7 +20,7 @@
                     {{ film.score }} <fa-icon [icon]="faStar"></fa-icon> ({{ film.scoreCount }})
                 </div>
                 <div class="show-more">
-                    More details... filmid({{ film.filmId }})
+                    <a [href]="'/more/'+film.filmId" target="_blank">More details...</a>
                 </div>
             </div>
         </div>

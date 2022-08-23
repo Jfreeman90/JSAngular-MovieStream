@@ -12,7 +12,7 @@ export class MoredetailspageComponent implements OnInit {
   //variable for the id
   public id:string;
   //variable for the film object that can be populated by the id
-  film: Film;
+  public film: Film;
 
   //constructors
   constructor(private route:ActivatedRoute, private filmService: FilmService) { }
@@ -20,11 +20,8 @@ export class MoredetailspageComponent implements OnInit {
   ngOnInit() {
     //get the ID of the film from the url
     this.id=this.route.snapshot.paramMap.get('id');
-    console.log(this.id);
     let idNum: number=+this.id;
-    console.log(idNum);
     //fill the films variable with the results of the API request
     this.filmService.getFilmFromId(idNum).subscribe((film) => this.film=film);
-    console.log(this.film);
   }
 }

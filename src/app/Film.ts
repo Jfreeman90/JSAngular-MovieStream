@@ -1,3 +1,15 @@
+//language interface hat can be embeddded into the film interface
+export interface Language{
+  languageId?:number,
+  name: string
+}
+
+//category interface to allow the html to access the category.
+export interface Category{
+  categoryId?:number,
+  name: string
+}
+
 //create a FILM interface that can store values when creating, logging in and resetting password.
 //? means that it can be an optional value -
 export interface Film{
@@ -6,7 +18,7 @@ export interface Film{
   description: string,
   releaseYear: number,
   languageId: number,
-  language?: object,
+  language?: Language,
   rentalDuration: number,
   renaltRate: number,
   length: number,
@@ -16,5 +28,5 @@ export interface Film{
   score: number,
   scoreCount: number,
   scoreTotal: number,
-  category?: object
+  filmCategory?:[Category]
 }

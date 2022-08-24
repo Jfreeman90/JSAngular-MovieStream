@@ -67,7 +67,7 @@ import { ChangepasswordComponent } from './components/changepassword/changepassw
     MyMaterialModule,
     FontAwesomeModule,
     RouterModule.forRoot([
-      {path: '', redirectTo: '/', pathMatch: 'full'},
+      {path: '', redirectTo: '/login', pathMatch: 'full'},
       {path: 'contactus', component: ContactComponent},
       {path: 'register', component: RegistrationComponent},
       {path: 'login', component: LoginComponent},

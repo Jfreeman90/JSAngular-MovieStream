@@ -20,6 +20,8 @@ export class FilmService {
   private apiRandom: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/random';
   private apiReserveTicket: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/get_ticket?id=';
   private apiSearchTitle: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/find_containing?titleString=';
+  private apiGetAllFilmsInCategory: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/get_by_category?category=';
+  private apiGetAllFilmsInLanguage: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/get_by_language?language=';
 
   constructor(private http:HttpClient) { }
 
@@ -57,4 +59,17 @@ export class FilmService {
     //return the task array from the api
     return this.http.get<Film[]>(this.apiSearchTitle+title);
   }
+
+  //get films using a category
+  getFilmsFromCategory(category: string){
+    //return the task array from the api
+    return this.http.get<Film[]>(this.apiGetAllFilmsInCategory+category);
+  }
+
+  //get films using a language
+  getFilmFromLanguage(language: string){
+    //return the task array from the api
+    return this.http.get<Film[]>(this.apiGetAllFilmsInLanguage+language);
+  }
+
 }

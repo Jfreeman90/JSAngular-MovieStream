@@ -2,9 +2,23 @@
 <div class="search-box-container" id="search-box-container">
     <div class="input-container">
       Search: <input type="text" id="search-input" name= "searchinput" [(ngModel)]="searchinput" placeholder="Search for a film">
-    </div>
-    <div class="search-button-container">
       <button (click)="searchSent()" class="search-submit-button">Search!</button>
+    </div>
+    <div class="radio-button-container">
+      <form>
+        <label class="radio-inline">
+          <input type="radio" id="film_radio" value="film" name="searchOptions" checked [(ngModel)]="searchOption">
+          Film
+        </label>
+        <label class="radio-inline">
+          <input type="radio" id="category_radio" value="category" name="searchOptions" [(ngModel)]="searchOption" >
+          Category
+        </label>
+        <label class="radio-inline">
+          <input type="radio" id="language_radio" value="language" name="searchOptions" [(ngModel)]="searchOption">
+          Language
+        </label>
+      </form>
     </div>
     <!--Only display this once a search query has been sent-->
     <div class="films-found-text-container" id="searches-found">

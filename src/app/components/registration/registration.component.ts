@@ -26,29 +26,35 @@ export class RegistrationComponent implements OnInit {
   onSubmit(){
     //validate the forms have been completed with the values neede
     if (!this.email){
-      alert('Please enter an email!');
+      let passwordContainer=document.getElementById("email-container");
+      passwordContainer.innerHTML+=`Please enter an email!`;
       return
     }
     if (!this.username){
-      alert('Please enter a username!');
+      let usernameContainer=document.getElementById("username-container");
+      usernameContainer.innerHTML+=`Please enter a username!`;
       return
     }
     if (!this.password){
-      alert('Please enter a password!');
+      let passwordContainer=document.getElementById("password-container");
+      passwordContainer.innerHTML+=`Please enter a password!`;
       return
     }
     if (!this.password_check){
-      alert('Please confirm your password!');
+      let passwordContainer=document.getElementById("password-check-container");
+      passwordContainer.innerHTML+=`Please confirm your password!`;
       return
     }
 
     //add logic to check password meets the rules
 
-
-
     //check the password and password_check are the same
     if (this.password!==this.password_check){
-      alert('You passwords are not the same. Confirm your password again.');
+      let passwordCheckContainer=document.getElementById("password-check-container");
+      passwordCheckContainer.innerHTML+=`Passwords were not the same; re-enter to confirm.`;
+      //set the border of the input to red
+      let passwordCheckInput=document.getElementById('password_check');
+      passwordCheckInput.style.border="1px solid red";
       //clear password inputs to allow user to renter them easily
       this.password='';
       this.password_check='';

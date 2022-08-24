@@ -8,6 +8,7 @@
 .input-container{
     font-size:1.5rem
 }
+
 .films-found-text-container{
     font-size:1.2rem;
     text-decoration: underline;
@@ -20,6 +21,8 @@
     color: rgb(16, 17, 17);
     font-size: 1.2rem;
 }
+
+.radio{ display: inline; }
 
 #search-input:hover{
     border: 1px solid gray;

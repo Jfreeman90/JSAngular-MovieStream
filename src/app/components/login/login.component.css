@@ -96,7 +96,6 @@ label{
     text-align: center;
 }
 
-
 .login-conformation-message-container{
   text-align: center;
   padding-top: 5px;
@@ -104,7 +103,7 @@ label{
 
 .new-user-container{
     text-align: center;
-    padding-top: 35px;
+    padding-top: 25px;
 }
 
 .new-user-container:hover{

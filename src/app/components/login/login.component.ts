@@ -22,12 +22,15 @@ export class LoginComponent implements OnInit {
 
   onSubmit(){
     //validate username and password arent empty fields
+
     if (!this.username){
-      alert('Please enter a username!');
+      let usernameContainer=document.getElementById("username-container");
+      usernameContainer.innerHTML+=`Please enter a username!`;
       return
     }
     if (!this.password){
-      alert('Please enter a password!');
+      let passwordContainer=document.getElementById("password-container");
+      passwordContainer.innerHTML+=`Please enter a password!`;
       return
     }
 
@@ -44,6 +47,11 @@ export class LoginComponent implements OnInit {
         confirmation.innerHTML=`Log in successful!`;
         //redirect to home page if log in correct
         this.router.navigate(['/home']);
+      }else {
+        let passwordContainer=document.getElementById("password-container");
+        passwordContainer.innerHTML+=`Incorrect password!<br>`;
+        let passwordContainerInput=document.getElementById("password");
+        passwordContainerInput.style.border="1px solid red";
       }
     } );
   }

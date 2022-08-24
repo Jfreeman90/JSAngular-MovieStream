@@ -20,6 +20,9 @@
                     <div class="film-length">
                         Length: {{ film.length }} minutes
                     </div>
+                    <div class="next-showing">
+                      Film starts at: {{ film.nextShowing }}
+                  </div>
                     <div class="show-more">
                         <p><a [href]="'/more/'+film.filmId" target="_blank">More details...</a></p>
                     </div>

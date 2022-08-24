@@ -69,7 +69,7 @@ export class SearchComponent implements OnInit {
       let maxItemsPerRow=Math.floor(containerWidth/190);
       let rowsNeeded=Math.ceil(filmsFound/maxItemsPerRow);
       let heightVar=75+(300*rowsNeeded);
-      console.log(heightVar);
+      //console.log(heightVar);
       searchContainer.style.height=`${heightVar}px`;
       });
     }

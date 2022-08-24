@@ -20,7 +20,6 @@ export class ActorpageComponent implements OnInit {
   ngOnInit() {
     //get the ID of the film from the url
     this.id=this.route.snapshot.paramMap.get('id');
-    console.log(this.id);
     //fill the films variable with the results of the API request
     this.actorService.getActorFromId(this.id).subscribe((actor) =>
       {this.actor=actor;

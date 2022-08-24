@@ -1,5 +1,3 @@
-import { Time } from "@angular/common"
-
 //language interface hat can be embeddded into the film interface
 export interface Language{
   languageId?:number,

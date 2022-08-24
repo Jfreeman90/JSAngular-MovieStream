@@ -35,7 +35,6 @@ h1{
 }
 
 .image-title:hover{
-    cursor: pointer;
     box-shadow: 0px 0px 8px 1px rgb(157, 40, 180);
 }
 
@@ -60,6 +59,9 @@ h1{
 
 .film-length{
     font-size: 1.1rem;
+}
+.next-showing{
+  font-size: 1.1rem;
 }
 
 .show-more{

@@ -27,6 +27,8 @@ import { SearchitemComponent } from './components/searchitem/searchitem.componen
 import { ScheduleitemComponent } from './components/scheduleitem/scheduleitem.component';
 import { ForgotpasswordpageComponent } from './components/forgotpasswordpage/forgotpasswordpage.component';
 import { MoredetailspageComponent } from './components/moredetailspage/moredetailspage.component';
+import { ActorpageComponent } from './components/actorpage/actorpage.component';
+import { ActorfilmdetailsComponent } from './components/actorfilmdetails/actorfilmdetails.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { MoredetailspageComponent } from './components/moredetailspage/moredetai
     SearchitemComponent,
     ScheduleitemComponent,
     ForgotpasswordpageComponent,
+    ActorpageComponent,
+    ActorfilmdetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,7 +69,8 @@ import { MoredetailspageComponent } from './components/moredetailspage/moredetai
       {path: 'login/reset', component: ForgotpasswordpageComponent},
       {path: 'film/:id', component: FilmpageComponent},
       {path: 'home', component: HomepageComponent},
-      {path: 'more/:id',  component: MoredetailspageComponent}
+      {path: 'more/:id',  component: MoredetailspageComponent},
+      {path: 'actors/:id',  component: ActorpageComponent}
     ])
   ],
   providers: [],

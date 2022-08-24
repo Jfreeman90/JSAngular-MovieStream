@@ -24,5 +24,14 @@
 .search-item-container{
   float: left;
   margin: 1%;
-  border-right: solid 1px gray;
+}
+
+.film-title-link{
+  color: black;
+}
+
+.film-title-link:hover{
+  font-weight: bold;
+  cursor: pointer;
+  font-size: larger;
 }

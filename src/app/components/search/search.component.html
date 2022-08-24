@@ -1,17 +1,18 @@
 <!--search-box-container-->
-<div class="search-box-container">
+<div class="search-box-container" id="search-box-container">
     <div class="input-container">
       Search: <input type="text" id="search-input" name= "searchinput" [(ngModel)]="searchinput" placeholder="Search for a film">
     </div>
     <div class="search-button-container">
       <button (click)="searchSent()" class="search-submit-button">Search!</button>
     </div>
+    <!--Only display this once a search query has been sent-->
+    <div class="films-found-text-container" id="searches-found">
+      Enter a film title to search for (partial titles work too if you have forgotten the name!)
+    </div>
+    <!--Display all of the films found as searchitem components-->
+    <div class="films-found-container">
+      <app-searchitem *ngFor="let film of films" [film]="film"></app-searchitem>
+    </div>
 </div>
-<!--Only display this once a search query has been sent-->
-<div class="films-found-text-container" id="searches-found">
-  Enter a film title to search for (partial titles work too if you have forgotten the name!)
-</div>
-<!--Display all of the films found as searchitem components-->
-<div class="films-found-container">
-  <app-searchitem *ngFor="let film of films" [film]="film"></app-searchitem>
-</div>
+

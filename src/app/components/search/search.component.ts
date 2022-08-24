@@ -30,9 +30,20 @@ export class SearchComponent implements OnInit {
     //fill the films array with the results of the API request
     this.filmService.getFilmFromTitle(this.searchinput).subscribe((films) => {
       this.films=films;
+      let filmsFound=this.films.length;
       //update the html with films found
       let searchInfo=document.getElementById('searches-found');
-      searchInfo.innerHTML=`Search (${this.searchinput}) returned ${this.films.length} results`;
+      searchInfo.innerHTML=`Search (${this.searchinput}) returned ${filmsFound} results`;
+      //update thh height of the schedule-container
+      let searchContainer=document.getElementById("search-box-container");
+      //height of the element dfepends on how many items were found in the search and the current width of the container
+      let containerWidth=searchContainer.clientWidth;
+      let maxItemsPerRow=Math.floor(containerWidth/190); //190 is the width of the search item component
+      console.log(maxItemsPerRow);
+      let rowsNeeded=Math.ceil(filmsFound/maxItemsPerRow);
+      console.log(rowsNeeded);
+      let heightVar=130+(300*rowsNeeded);
+      searchContainer.style.height=`${heightVar}px`;
     }
       );
 

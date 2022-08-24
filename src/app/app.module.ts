@@ -30,6 +30,7 @@ import { MoredetailspageComponent } from './components/moredetailspage/moredetai
 import { ActorpageComponent } from './components/actorpage/actorpage.component';
 import { ActorfilmdetailsComponent } from './components/actorfilmdetails/actorfilmdetails.component';
 import { FilmcastitemComponent } from './components/filmcastitem/filmcastitem.component';
+import { ChangepasswordComponent } from './components/changepassword/changepassword.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { FilmcastitemComponent } from './components/filmcastitem/filmcastitem.co
     ActorpageComponent,
     ActorfilmdetailsComponent,
     FilmcastitemComponent,
+    ChangepasswordComponent,
   ],
   imports: [
     BrowserModule,
@@ -70,6 +72,7 @@ import { FilmcastitemComponent } from './components/filmcastitem/filmcastitem.co
       {path: 'register', component: RegistrationComponent},
       {path: 'login', component: LoginComponent},
       {path: 'login/reset', component: ForgotpasswordpageComponent},
+      {path: 'changepassword', component: ChangepasswordComponent},
       {path: 'film/:id', component: FilmpageComponent},
       {path: 'home', component: HomepageComponent},
       {path: 'more/:id',  component: MoredetailspageComponent},

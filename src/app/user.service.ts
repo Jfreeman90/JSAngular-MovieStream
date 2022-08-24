@@ -17,6 +17,7 @@ export class UserService {
   private apiURLEmailLookup:string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/users/email?email=';
   private apiURLUsernameLookup:string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/users/user?username=';
   private apiURLAddUser:string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/users/add?email=';
+  private apiURLChangePassword: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/users/change-password?username=';
 
   //constructor allows the use of get/post/patch/del
   constructor(private http:HttpClient) { }
@@ -37,4 +38,10 @@ export class UserService {
     //add the user by using the user inteface
     return this.http.post<User>(this.apiURLAddUser+email+'&username='+username+'&password='+password, httpOptions)
   }
+
+  //change the users password given the new password
+  changePassword(username: string, newPassword: string){
+    return this.http.patch<User>(this.apiURLChangePassword+username+'&newPassW='+newPassword, {username, newPassword});
+  }
+
 }

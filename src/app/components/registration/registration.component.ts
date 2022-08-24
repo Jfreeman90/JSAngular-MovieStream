@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/User';                  //user interface to get the user json format
 import { UserService } from 'src/app/user.service';   //user service to get in touch with the API
+import { Router } from '@angular/router';             //allows to redirect after a task is completed
 
 @Component({
   selector: 'app-registration',
@@ -17,7 +18,7 @@ export class RegistrationComponent implements OnInit {
   //variable for a User
   user: User;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -54,23 +55,10 @@ export class RegistrationComponent implements OnInit {
       return
     }
 
-    //create the new user once validations are checked
-    const newUser={
-      email: this.email,
-      username: this.username,
-      password: this.password,
-    }
-
     //send the new user to the database and save it
-    this.userService.addUser(this.email, this.username, this.password).subscribe(() => (
-      console.log("ADDED user to database")
-    ));
-
-     //clear the form after submission
-     this.email='';
-     this.username='';
-     this.password='';
-     this.password_check='';
-     this.mailing_list=true;
-  }
+    this.userService.addUser(this.email, this.username, this.password).subscribe(() => {
+      //redirect user to login once user has been created
+      this.router.navigate(['/login'])
+    });
+ }
 }

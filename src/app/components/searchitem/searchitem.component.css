@@ -1,6 +1,7 @@
 .search-item-container{
-    text-align: center;
     width: 175px;
+    height: 230px;
+    float: left;
 }
 
 .image-title{
@@ -19,11 +20,6 @@
 
 .rating-container{
     font-size: 1.2rem;
-}
-
-.search-item-container{
-  float: left;
-  margin: 1%;
 }
 
 .film-title-link{

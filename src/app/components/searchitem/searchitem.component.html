@@ -2,7 +2,7 @@
 <div class="search-item-container">
     <div class="image-container">
         <a [href]="'/film/'+film.filmId">
-            <img class="image-title" [src]="'https://picsum.photos/id/'+film.filmId+'/200'" alt="film image">
+            <img class="image-title" [src]="'https://picsum.photos/id/'+film.filmId+'/200'" alt="No image" onerror="this.src='https://picsum.photos/id/24/200'">
         </a>
     </div>
     <div class="title-container">

@@ -48,6 +48,6 @@
 
 .films-found-container{
     height: calc(100% - 100px);
-    align-items: center;
+    display: inline;
 }
 

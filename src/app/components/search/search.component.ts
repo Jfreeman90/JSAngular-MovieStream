@@ -36,10 +36,9 @@ export class SearchComponent implements OnInit {
       let searchContainer=document.getElementById("search-box-container");
       //height of the element dfepends on how many items were found in the search and the current width of the container
       let containerWidth=searchContainer.clientWidth;
-      let maxItemsPerRow=Math.floor(containerWidth/190); //190 is the width of the search item component
+      let maxItemsPerRow=Math.floor(containerWidth/175); //175 is the width of the search item component
       let rowsNeeded=Math.ceil(filmsFound/maxItemsPerRow);
-      let heightVar=75+(300*rowsNeeded);
-      console.log(heightVar);
+      let heightVar=95+(230*rowsNeeded);
       searchContainer.style.height=`${heightVar}px`;
       });
     } else if (this.searchOption==="language"){
@@ -51,10 +50,9 @@ export class SearchComponent implements OnInit {
       searchInfo.innerHTML=`Search for language (${this.searchinput}) returned ${filmsFound} results`;
       let searchContainer=document.getElementById("search-box-container");
       let containerWidth=searchContainer.clientWidth;
-      let maxItemsPerRow=Math.floor(containerWidth/190);
+      let maxItemsPerRow=Math.floor(containerWidth/175);
       let rowsNeeded=Math.ceil(filmsFound/maxItemsPerRow);
-      let heightVar=75+(300*rowsNeeded);
-      console.log(heightVar);
+      let heightVar=95+(230*rowsNeeded);
       searchContainer.style.height=`${heightVar}px`;
       });
     }else {
@@ -66,10 +64,9 @@ export class SearchComponent implements OnInit {
       searchInfo.innerHTML=`Search for film (${this.searchinput}) returned ${filmsFound} results`;
       let searchContainer=document.getElementById("search-box-container");
       let containerWidth=searchContainer.clientWidth;
-      let maxItemsPerRow=Math.floor(containerWidth/190);
+      let maxItemsPerRow=Math.floor(containerWidth/175);
       let rowsNeeded=Math.ceil(filmsFound/maxItemsPerRow);
-      let heightVar=75+(300*rowsNeeded);
-      //console.log(heightVar);
+      let heightVar=95+(230*rowsNeeded);
       searchContainer.style.height=`${heightVar}px`;
       });
     }

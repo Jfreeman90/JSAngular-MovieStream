@@ -37,20 +37,20 @@
                 </div>
                 <div class="stars-container">
                     <p>
-                    <fa-icon [icon]="faStar"></fa-icon>
-                    <fa-icon [icon]="faStar"></fa-icon>
-                    <fa-icon [icon]="faStar"></fa-icon>
-                    <fa-icon [icon]="faStar"></fa-icon>
-                    <fa-icon [icon]="faStar"></fa-icon>
-                    <fa-icon [icon]="faStar"></fa-icon>
-                    <fa-icon [icon]="faStar"></fa-icon>
-                    <fa-icon [icon]="faStar"></fa-icon>
-                    <fa-icon [icon]="faStar"></fa-icon>
-                    <fa-icon [icon]="faStar"></fa-icon>
+                    <fa-icon (click)="oneStar()" [icon]="faStar"></fa-icon>
+                    <fa-icon (click)="twoStar()" [icon]="faStar"></fa-icon>
+                    <fa-icon (click)="threeStar()" [icon]="faStar"></fa-icon>
+                    <fa-icon (click)="fourStar()" [icon]="faStar"></fa-icon>
+                    <fa-icon (click)="fiveStar()" [icon]="faStar"></fa-icon>
+                    <fa-icon (click)="sixStar()" [icon]="faStar"></fa-icon>
+                    <fa-icon (click)="sevenStar()" [icon]="faStar"></fa-icon>
+                    <fa-icon (click)="eightStar()" [icon]="faStar"></fa-icon>
+                    <fa-icon (click)="nineStar()" [icon]="faStar"></fa-icon>
+                    <fa-icon (click)="tenStar()" [icon]="faStar"></fa-icon>
                 </p>
                 </div>
             </div>
-            <div class="current-rating">
+            <div class="current-rating" id="current-rating">
                 <p>Current rating : {{ film.score }} <fa-icon [icon]="faStar"></fa-icon> ({{ film.scoreCount }})</p>
             </div>
         </div>

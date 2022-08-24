@@ -1,3 +1,5 @@
+import { Time } from "@angular/common"
+
 //language interface hat can be embeddded into the film interface
 export interface Language{
   languageId?:number,
@@ -29,5 +31,6 @@ export interface Film{
   scoreCount: number,
   scoreTotal: number,
   filmCategory?:[Category],
-  ticketsReserved: number
+  ticketsReserved: number,
+  nextShowing: Date
 }

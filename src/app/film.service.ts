@@ -22,6 +22,7 @@ export class FilmService {
   private apiSearchTitle: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/find_containing?titleString=';
   private apiGetAllFilmsInCategory: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/get_by_category?category=';
   private apiGetAllFilmsInLanguage: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/get_by_language?language=';
+  private apiURLRateFilm: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/films/update_score?id=';
 
   constructor(private http:HttpClient) { }
 
@@ -70,6 +71,11 @@ export class FilmService {
   getFilmFromLanguage(language: string){
     //return the task array from the api
     return this.http.get<Film[]>(this.apiGetAllFilmsInLanguage+language);
+  }
+
+  //add score to the
+  rateFilm(id:number, newScore:string){
+    return this.http.patch<Film>(this.apiURLRateFilm+id+'&newScore='+newScore, {id,newScore});
   }
 
 }

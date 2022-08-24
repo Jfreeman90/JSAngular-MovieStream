@@ -16,7 +16,10 @@ export class ScheduleitemComponent implements OnInit {
 
   ngOnInit(): void {
     //fill the films array with the results of the API request
-    this.filmService.getRandomFilm().subscribe((film) => this.film=film);
+    this.filmService.getRandomFilm().subscribe((film) => {
+      this.film=film;
+    });
+
   }
 
   //when a ticket is reserved for that film id add one to the tickets reserve and update the html.

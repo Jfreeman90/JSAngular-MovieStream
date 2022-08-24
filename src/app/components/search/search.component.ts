@@ -31,7 +31,7 @@ export class SearchComponent implements OnInit {
       let filmsFound=this.films.length;
       //update the html with films found
       let searchInfo=document.getElementById('searches-found');
-      searchInfo.innerHTML=`Search (${this.searchinput}) returned ${filmsFound} results`;
+      searchInfo.innerHTML=`Search for category (${this.searchinput}) returned ${filmsFound} results`;
       //update thh height of the schedule-container
       let searchContainer=document.getElementById("search-box-container");
       //height of the element dfepends on how many items were found in the search and the current width of the container
@@ -48,7 +48,7 @@ export class SearchComponent implements OnInit {
       this.films=films;
       let filmsFound=this.films.length;
       let searchInfo=document.getElementById('searches-found');
-      searchInfo.innerHTML=`Search (${this.searchinput}) returned ${filmsFound} results`;
+      searchInfo.innerHTML=`Search for language (${this.searchinput}) returned ${filmsFound} results`;
       let searchContainer=document.getElementById("search-box-container");
       let containerWidth=searchContainer.clientWidth;
       let maxItemsPerRow=Math.floor(containerWidth/190);
@@ -63,7 +63,7 @@ export class SearchComponent implements OnInit {
       this.films=films;
       let filmsFound=this.films.length;
       let searchInfo=document.getElementById('searches-found');
-      searchInfo.innerHTML=`Search (${this.searchinput}) returned ${filmsFound} results`;
+      searchInfo.innerHTML=`Search for film (${this.searchinput}) returned ${filmsFound} results`;
       let searchContainer=document.getElementById("search-box-container");
       let containerWidth=searchContainer.clientWidth;
       let maxItemsPerRow=Math.floor(containerWidth/190);

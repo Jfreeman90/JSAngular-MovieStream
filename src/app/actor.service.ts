@@ -14,6 +14,7 @@ const httpOptions = {
 export class ActorService {
   //sakila api urls
   private apiURLActorById:string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/actors/';
+  private apiURLActorsInFilmByFilmId: string='http://sakillaapi-env.eba-wnfxdqg3.us-east-1.elasticbeanstalk.com/actors/actors_in_film?id=';
 
   constructor(private http:HttpClient) { }
 
@@ -21,6 +22,12 @@ export class ActorService {
   getActorFromId(id: string): Observable<Actor>{
     //return the task array from the api
     return this.http.get<Actor>(this.apiURLActorById+id);
+  }
+
+  //get one Actor from id
+  getActorInFilmFromFilmId(id: string): Observable<Actor[]>{
+    //return the task array from the api
+    return this.http.get<Actor[]>(this.apiURLActorsInFilmByFilmId+id);
   }
 
 }

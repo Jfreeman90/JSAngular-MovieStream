@@ -29,6 +29,7 @@ import { ForgotpasswordpageComponent } from './components/forgotpasswordpage/for
 import { MoredetailspageComponent } from './components/moredetailspage/moredetailspage.component';
 import { ActorpageComponent } from './components/actorpage/actorpage.component';
 import { ActorfilmdetailsComponent } from './components/actorfilmdetails/actorfilmdetails.component';
+import { FilmcastitemComponent } from './components/filmcastitem/filmcastitem.component';
 
 @NgModule({
   declarations: [
@@ -50,8 +51,10 @@ import { ActorfilmdetailsComponent } from './components/actorfilmdetails/actorfi
     SearchitemComponent,
     ScheduleitemComponent,
     ForgotpasswordpageComponent,
+    MoredetailspageComponent,
     ActorpageComponent,
     ActorfilmdetailsComponent,
+    FilmcastitemComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,7 +4,7 @@
   </div>
   <div class="film-detail-container">
     <div class="image-container">
-      <img class="image-details" src="./assets/placeholder_image.PNG" alt="film image">
+      <img class="image-details" [src]="'https://picsum.photos/id/'+film.filmId+'/200'" alt="film image">
     </div>
     <div class="details-container">
       <div class="description">
@@ -34,8 +34,11 @@
       <div class="number-of-votes">
         <p><strong>Number of votes:</strong> {{ film.scoreCount }}</p>
       </div>
-
     </div>
   </div>
-
+  <div class="cast-list-container">
+    <!--cycle throught the film cast item with just the actors names-->
+    <h3>Cast List</h3>
+      <app-filmcastitem *ngFor="let actor of actors" [actor]="actor"></app-filmcastitem>
+  </div>
 </div>

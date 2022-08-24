@@ -24,7 +24,7 @@ export class FilmService {
   constructor(private http:HttpClient) { }
 
   //get one film from id
-  getFilmFromId(id: number): Observable<Film>{
+  getFilmFromId(id: string): Observable<Film>{
     //return the task array from the api
     return this.http.get<Film>(this.apiURLFilmById+id);
   }

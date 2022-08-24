@@ -21,8 +21,7 @@ export class FilmpageComponent implements OnInit {
   ngOnInit() {
     //get the ID of the film from the url
     this.id=this.route.snapshot.paramMap.get('id');
-    let idNum: number=+this.id;
     //fill the films variable with the results of the API request
-    this.filmService.getFilmFromId(idNum).subscribe((film) => this.film=film);
+    this.filmService.getFilmFromId(this.id).subscribe((film) => this.film=film);
   }
 }

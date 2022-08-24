@@ -8,7 +8,7 @@ export interface FilmInfo{
 }
 
 export interface Actor{
-  filmId?: number,
+  actorId?: number,
   firstName: string,
   lastName: string,
   films?:[FilmInfo]

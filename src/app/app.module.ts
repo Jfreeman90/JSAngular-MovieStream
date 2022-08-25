@@ -68,15 +68,15 @@ import { ChangepasswordComponent } from './components/changepassword/changepassw
     FontAwesomeModule,
     RouterModule.forRoot([
       {path: '', redirectTo: '/login', pathMatch: 'full'},
-      {path: 'contactus', component: ContactComponent},
-      {path: 'register', component: RegistrationComponent},
-      {path: 'login', component: LoginComponent},
-      {path: 'login/reset', component: ForgotpasswordpageComponent},
-      {path: 'changepassword', component: ChangepasswordComponent},
-      {path: 'film/:id', component: FilmpageComponent},
-      {path: 'home', component: HomepageComponent},
-      {path: 'more/:id',  component: MoredetailspageComponent},
-      {path: 'actors/:id',  component: ActorpageComponent}
+      {path: 'contactus', component: ContactComponent, title:"Conact Us"},
+      {path: 'register', component: RegistrationComponent, title:"Register"},
+      {path: 'login', component: LoginComponent, title:"Log In"},
+      {path: 'login/reset', component: ForgotpasswordpageComponent, title:"Forgotten Password"},
+      {path: 'changepassword', component: ChangepasswordComponent, title:"Change Password"},
+      {path: 'film/:id', component: FilmpageComponent, title:"Film Live Stream"},
+      {path: 'home', component: HomepageComponent, title:"Movie Stream"},
+      {path: 'more/:id',  component: MoredetailspageComponent, title:"Film Information"},
+      {path: 'actors/:id',  component: ActorpageComponent, title:"Actors Film List"}
     ])
   ],
   providers: [],

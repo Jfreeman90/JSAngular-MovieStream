@@ -14,8 +14,8 @@ export class LoginComponent implements OnInit {
   password: string;
   //variable for the user element which links to the user interface which holds all information that is returned
   user: User;
-
-  constructor(private userService: UserService, private router: Router) { }
+  constructor(private userService: UserService,
+               private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -47,6 +47,9 @@ export class LoginComponent implements OnInit {
         confirmation.innerHTML=`Log in successful!`;
         //redirect to home page if log in correct
         this.router.navigate(['/home']);
+        // After the user has logged in, emit change user logged in to true
+        localStorage.setItem('isUserLoggedIn',"true");
+        localStorage.setItem('username', this.username)
       }else {
         let passwordContainer=document.getElementById("password-container");
         passwordContainer.innerHTML+=`Incorrect password!<br>`;

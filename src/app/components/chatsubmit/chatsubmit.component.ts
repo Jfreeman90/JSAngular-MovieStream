@@ -27,11 +27,12 @@ export class ChatsubmitComponent implements OnInit {
     if (!this.chatMessage){
       return
     }
+    let username=localStorage.getItem('username');
     //update the html
     let chatContainer=document.getElementById("chat-messages-container");
     chatContainer.innerHTML+=`<div class="chat-message">
       <div class="chat-username" style="font-weight: bold; width: 90px; color: black; padding-left: 15px;">
-          <p>Username:</p>
+          <p>${username}:</p>
       </div>
       <div class="chat-message" style="padding-left: 15px; color:aliceblue;">
           <p>${this.chatMessage}</p>

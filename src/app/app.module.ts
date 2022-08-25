@@ -31,6 +31,7 @@ import { ActorpageComponent } from './components/actorpage/actorpage.component';
 import { ActorfilmdetailsComponent } from './components/actorfilmdetails/actorfilmdetails.component';
 import { FilmcastitemComponent } from './components/filmcastitem/filmcastitem.component';
 import { ChangepasswordComponent } from './components/changepassword/changepassword.component';
+import { DeleteaccountComponent } from './components/deleteaccount/deleteaccount.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { ChangepasswordComponent } from './components/changepassword/changepassw
     ActorfilmdetailsComponent,
     FilmcastitemComponent,
     ChangepasswordComponent,
+    DeleteaccountComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,6 +75,7 @@ import { ChangepasswordComponent } from './components/changepassword/changepassw
       {path: 'login', component: LoginComponent, title:"Log In"},
       {path: 'login/reset', component: ForgotpasswordpageComponent, title:"Forgotten Password"},
       {path: 'changepassword', component: ChangepasswordComponent, title:"Change Password"},
+      {path: 'deleteaccount',  component: DeleteaccountComponent, title:"Delete Account"},
       {path: 'film/:id', component: FilmpageComponent, title:"Film Live Stream"},
       {path: 'home', component: HomepageComponent, title:"Movie Stream"},
       {path: 'more/:id',  component: MoredetailspageComponent, title:"Film Information"},

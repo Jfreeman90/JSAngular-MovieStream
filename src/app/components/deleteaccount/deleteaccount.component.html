@@ -1,0 +1,26 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+      <div class="delete-account-header">
+          <h2>Delete Account</h2>
+      </div>
+      <div class="info-container">
+          <p>Enter the username you signed up with to delete your password.</p>
+          <p id="delete-confirmation"></p>
+      </div>
+      <div class="form-control">
+          <label for="username">Username:</label>
+          <input type="text" name="email" [(ngModel)]="username" id="username" placeholder="Enter your username here">
+      </div>
+      <div class="form-control" id="password-container">
+        <p>Confirm account deletion by entering your password</p>
+        <label for="password">Password:</label>
+        <input type="password" name="password" [(ngModel)]="password" id="password" placeholder="Enter Password here">
+    </div>
+      <div class="delete-account-button-container">
+          <input type="submit" value="Delete Account" class="btn login-button">
+      </div>
+  </form>
+  <div class="login-container">
+      <p> <a href="/login">Return to login page</a></p>
+  </div>
+</div>

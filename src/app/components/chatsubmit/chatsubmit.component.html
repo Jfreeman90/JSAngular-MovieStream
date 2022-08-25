@@ -1,6 +1,6 @@
 <div class="submit-container">
     <div class="input-container">
-        <input type="text" name="chatmessage" id="chatmessage" placeholder="Send a message!">
+        <input (keyup.enter)="chatSubmitButton()" type="text" name="chatmessage" [(ngModel)]="chatMessage" id="chatmessage" placeholder="Send a message!">
     </div>
 </div>
 <div class="chat-settings">
@@ -10,6 +10,6 @@
         <div class="settings-icon-container"><fa-icon [icon]="faGear"></fa-icon></div>
     </div>
     <div class="submit-message-container">
-        <button class="message-submit-button">Chat!</button>
+        <button (click)="chatSubmitButton()" class="message-submit-button">Chat!</button>
     </div>
 </div>

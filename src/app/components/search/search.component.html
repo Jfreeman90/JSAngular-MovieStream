@@ -1,7 +1,7 @@
 <!--search-box-container-->
 <div class="search-box-container" id="search-box-container">
     <div class="input-container">
-      Search: <input type="text" id="search-input" name= "searchinput" [(ngModel)]="searchinput" placeholder="Search for a film">
+      Search: <input (keyup.enter)="searchSent()" type="text" id="search-input" name= "searchinput" [(ngModel)]="searchinput" placeholder="Search for a film">
       <button (click)="searchSent()" class="search-submit-button">Search!</button>
     </div>
     <div class="radio-button-container">

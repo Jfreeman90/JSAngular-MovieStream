@@ -63,15 +63,16 @@
 }
 
 .message-submit-button{
-    height:2rem;
-    width:75px;
-    background-color:blueviolet;
-    color: rgba(240, 248, 255, 0.822);
-    font-weight: bold;
-    border: 1px solid blueviolet;;
-    border-radius: 10%;
+  height:2rem;
+  width:75px;
+  background-color:blueviolet;
+  color: rgba(240, 248, 255, 0.822);
+  font-weight: bold;
+  border: 1px solid blueviolet;;
+  border-radius: 10%;
 }
 .message-submit-button:hover{
-    background-color: rgb(107, 16, 107);
-    border: 1px solid rgb(107, 16, 107);
+  cursor: pointer;
+  background-color: rgb(107, 16, 107);
+  border: 1px solid rgb(107, 16, 107);
 }

@@ -13,10 +13,31 @@ export class ChatsubmitComponent implements OnInit {
   faFaceSmile=faFaceSmile;
   faHandsClapping=faHandsClapping;
   faGear=faGear;
+  //variable for the chat message
+  chatMessage: string;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  //submit the chat message
+  chatSubmitButton(){
+    //check there is a message to send
+    if (!this.chatMessage){
+      return
+    }
+    //update the html
+    let chatContainer=document.getElementById("chat-messages-container");
+    chatContainer.innerHTML+=`<div class="chat-message">
+      <div class="chat-username" style="font-weight: bold; width: 90px; color: black; padding-left: 15px;">
+          <p>Username:</p>
+      </div>
+      <div class="chat-message" style="padding-left: 15px; color:aliceblue;">
+          <p>${this.chatMessage}</p>
+      </div>
+      </div>`
+    //clear the message
+    this.chatMessage='';
+  }
 }

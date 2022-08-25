@@ -8,10 +8,11 @@ import { FilmInfo } from 'src/app/Actor';
 })
 export class ActorfilmdetailsComponent implements OnInit {
   @Input() film: FilmInfo;
-
+  isLoaded: boolean=false
   constructor() { }
 
   ngOnInit(): void {
+    this.isLoaded=true;
   }
 
 }

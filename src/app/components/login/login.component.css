@@ -120,7 +120,17 @@ label{
     cursor: pointer;
 }
 
+.delete-account-container{
+  text-align: center;
+}
+
+.delete-account-container:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 a{
     color: black;
     text-decoration: none;
 }
+
